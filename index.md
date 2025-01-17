@@ -6,21 +6,14 @@ layout: home
 
 # コンテンツ ディレクトリ
 
-各ラボの演習とデモへのハイパーリンクを以下に示します。
+サンプル ファイルは、次に示すように、Microsoft Learn に投稿された演習モジュール内の 2 つのシミュレーションで使用されます。
 
-## ラボ
+### サンプル ファイル
+</br>
 
-{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
-| モジュール | ラボ |
-| --- | --- | 
-{% for activity in labs %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
-
-## デモ
-
-{% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| モジュール | デモ |
-| --- | --- | 
-{% for activity in demos %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
+| モジュール | ユニット (シミュレーション) | SampleFile |
+| --- | --- | --- |
+| Microsoft Security Copilot のユース ケースを探索する | カスタム プラグインを有効にする | KQL_DefenderExample.yaml |
+| Microsoft Security Copilot のユース ケースを探索する | ナレッジ ベースとしてのファイルのアップロードについて調べる | Woodgrove Corporate Data Handling Policy.docx |
+| Microsoft Security Copilot のユース ケースを探索する | ナレッジ ベースとしてのファイルのアップロードについて調べる | Woodgrove Corporate Data Handling Policy.pdf |
 
