@@ -1,3 +1,5 @@
+**⚠️ This GitHub repo will retire on 31st October 2025.**
+
 # SC-5006 Microsoft Copilot for Security の概要
 
 **あなたは MCT ですか?** - [MCT 向けの GitHub ユーザー ガイド](https://microsoftlearning.github.io/MCT-User-Guide/)をご覧ください
